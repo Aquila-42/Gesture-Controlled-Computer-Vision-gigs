@@ -6,6 +6,17 @@ An interactive, high-performance astrophysical simulation that merges **General 
 
 ---
 
+## ✨ Features
+
+- 🎮 **Gesture-Based Interaction:** Control the simulation entirely through hand gestures
+- 🌟 **150,000+ Particle System:** Highly optimized starfield with realistic motion
+- 🔭 **Gravitational Lensing:** Custom GLSL shader simulating Einstein's General Relativity
+- 🌪️ **Dynamic Accretion Disk:** Simplex noise-based plasma flow simulation
+- 📱 **Responsive Design:** Works on desktop and tablet with camera support
+- 🚀 **High Performance:** Optimized for 60 FPS on modern laptops
+
+---
+
 ## 📸 Live Demo
 
 🎮 **Try it out:** [Live Demo](https://your-deployment-link.com) *(add your deployment URL)*
@@ -48,8 +59,8 @@ I integrated the **Google MediaPipe HandLandmarker** API to create a "zero-UI" i
 ### Prerequisites
 * Node.js (v14 or higher)
 * npm or yarn
-* A modern web browser with WebGL support
-* Camera/Webcam
+* A modern web browser with WebGL support (Chrome, Firefox, Safari, Edge)
+* Camera/Webcam with adequate lighting
 
 ### Installation
 

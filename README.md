@@ -3,9 +3,6 @@
 A high-fidelity, interactive astrophysical simulation that combines **General Relativity** concepts with **Computer Vision**. Built during my final year at **NIT Rourkela**, this project explores how we can use AI to interact with complex physical environments.
 
 ## 🚀 [Click Here for the Live Demo]
-*(Replace this text with your GitHub Pages link once it's live!)*
-
----
 
 ## 🛠️ How it Works
 
@@ -21,7 +18,6 @@ I replaced the mouse with an **AI Hand-Gesture Engine**. By integrating **Google
 * **Pinch-to-Scale:** I wrote a function that calculates the distance between your thumb and index finger. As you "pinch" in the air, the accretion disk expands or contracts.
 * **Real-time Processing:** The simulation runs at a high FPS by offloading the hand-tracking logic to the GPU.
 
----
 
 ## 💻 Tech Stack
 * **Graphics:** Three.js (WebGL)
@@ -33,7 +29,8 @@ I replaced the mouse with an **AI Hand-Gesture Engine**. By integrating **Google
 * **Jitter Control:** Real-time hand tracking can be shaky. I implemented a **Damping Algorithm** (linear interpolation) to ensure the camera movement feels smooth and cinematic.
 * **Mathematical Mapping:** Translating 2D webcam coordinates into 3D orbital coordinates required some tricky trigonometry to make the "interaction" feel natural to the user.
 
----
 
-## 🛰️ About Me
+## 🛰️ About Me[project.html](https://github.com/user-attachments/files/25471116/project.html)
+
 I'm a Physics major at **NIT Rourkela** passionate about bridging the gap between theoretical science and computational tools. This project is a step toward making "invisible" physics interactive.
+[project.html](https://github.com/user-attachments/files/25471108/project.html)

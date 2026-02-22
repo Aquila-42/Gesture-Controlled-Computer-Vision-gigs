@@ -1,10 +1,14 @@
 Gesture-Controlled-Computer-Vision-gigs
 A high-performance WebGL simulation combining Astrophysics with Computer Vision. Using Google MediaPipe, I implemented a gesture-control system to manipulate a 3D black hole model. Features 150k+ particles, custom noise-flow shaders, and pinch-to-zoom logic. A study in mapping human input to complex mathematical environments.
- 🌌 Gesture-Controlled Schwarzschild Black Hole
+# 🌌 Gesture-Controlled Schwarzschild Black Hole
+
 An interactive, high-performance astrophysical simulation that merges **General Relativity** with **AI-powered Computer Vision**. Instead of a mouse, this project uses real-time hand tracking to manipulate a 3D spacetime environment.
+
 *(Note: Requires camera access for the hand-tracking AI to function)*
-💡 The Core Concepts
- 1. The Physics (General Relativity)
+---
+## 💡 The Core Concepts
+
+### 1. The Physics (General Relativity)
 The core of this project is a custom **GLSL Fragment Shader** that simulates **Gravitational Lensing**. 
 * **Light Bending:** I implemented a distortion algorithm that calculates how light from the background stars and the accretion disk would warp around a massive object.
 * **Accretion Disk:** The disk uses **Simplex Noise** to simulate the flow of superheated plasma, with its speed and density being dynamically adjustable.

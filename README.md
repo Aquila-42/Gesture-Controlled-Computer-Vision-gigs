@@ -1,34 +1,35 @@
-# 🌌 Gesture-Controlled Black Hole Simulation
+# 🌌 Gesture-Controlled Schwarzschild Black Hole
 
-A high-fidelity, interactive astrophysical simulation that combines **General Relativity** concepts with **Computer Vision**. Built during my final year at **NIT Rourkela**, this project explores how we can use AI to interact with complex physical environments.
+A high-performance astrophysical simulation built purely for the fun of merging **General Relativity** with **AI-powered Computer Vision**. This project replaces traditional mouse inputs with a real-time gesture engine to manipulate a 3D spacetime environment.
 
-## 🛠️ How it Works
 
-### 1. The Physics (General Relativity & Optics)
-Most black hole visualizations are static. In this project, I used **GLSL Shaders** to implement:
-* **Gravitational Lensing:** A custom shader that calculates light distortion around the Schwarzschild radius.
-* **Accretion Disk Dynamics:** I used Simplex noise to simulate the "flow" of gas. The disk isn't just a texture; it's a dynamic system where the flow speed reacts to your gestures.
-* **150,000 Stars:** To make the background feel like deep space, I used `BufferGeometry` to render a massive starfield with minimal performance lag.
+## 💡 The Project Concept
+
+I built this because I wanted to see if I could make the "invisible" math of black holes interactive. It was a personal challenge to combine complex physics shaders with modern AI libraries.
+
+### 1. The Physics (Optics & Space)
+* **Gravitational Lensing:** I wrote a custom **GLSL Fragment Shader** to simulate how light warps around a massive object. It creates that signature "Einstein Ring" effect in real-time.
+* **Accretion Disk:** Uses **Simplex Noise** to simulate flowing plasma. I linked the flow speed and disk density directly to the gesture engine.
+* **Event Horizon:** Features a Fresnel-effect glow and a deep-black core to represent the Schwarzschild radius.
 
 ### 2. The AI (MediaPipe Hand Tracking)
-I replaced the mouse with an **AI Hand-Gesture Engine**. By integrating **Google MediaPipe**, the code tracks 21 points on your hand:
-* **Orbit:** Moving your hand in the air rotates the camera around the event horizon.
-* **Pinch-to-Scale:** I wrote a function that calculates the distance between your thumb and index finger. As you "pinch" in the air, the accretion disk expands or contracts.
-* **Real-time Processing:** The simulation runs at a high FPS by offloading the hand-tracking logic to the GPU.
+I integrated the **Google MediaPipe HandLandmarker** to create a "zero-UI" experience:
+* **Neural Mapping:** The AI tracks 21 hand joints. Moving your hand in 3D space controls the camera's orbital position.
+* **Pinch-to-Expand:** I wrote a logic script that calculates the distance between your thumb and index finger. As you "pinch" in the air, the accretion disk physically expands and speeds up.
 
+---
 
-## 💻 Tech Stack
-* **Graphics:** Three.js (WebGL)
-* **AI/ML:** MediaPipe Vision Tasks
-* **Shaders:** GLSL (Vertex & Fragment)
-* **UI:** HTML5/CSS3 (Glassmorphism design)
+## 🛠️ Tech Stack
+* **Language:** JavaScript (ES6+), GLSL (Shaders)
+* **Graphics Library:** Three.js (WebGL)
+* **AI Engine:** MediaPipe Vision Tasks
+* **Post-Processing:** UnrealBloom (for that cinematic glow)
 
-## 🧠 Challenges I Overcame
-* **Jitter Control:** Real-time hand tracking can be shaky. I implemented a **Damping Algorithm** (linear interpolation) to ensure the camera movement feels smooth and cinematic.
-* **Mathematical Mapping:** Translating 2D webcam coordinates into 3D orbital coordinates required some tricky trigonometry to make the "interaction" feel natural to the user.
+## 🔧 Engineering Challenges
+* **Smoothing Input:** Hand tracking can be jittery, so I implemented **Linear Interpolation (LERP)** to make the camera movement feel smooth and cinematic.
+* **Optimization:** Rendering 150,000 stars and heavy shaders simultaneously meant optimizing the GPU usage to keep the frame rate high.
 
+---
 
-## 🛰️ About Me[project.html](https://github.com/user-attachments/files/25471116/project.html)
-
-I'm a Physics major at **NIT Rourkela** passionate about bridging the gap between theoretical science and computational tools. This project is a step toward making "invisible" physics interactive.
-[project.html](https://github.com/user-attachments/files/25471108/project.html)
+## 👨‍💻 About Me
+I'm a Physics & Astronomy enthusiast who loves building computational tools and experimental projects. I spend my time exploring the intersection of theoretical science and creative coding.

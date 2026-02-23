@@ -2,8 +2,6 @@
 
 A high-fidelity, interactive astrophysical simulation that combines **General Relativity** concepts with **Computer Vision**. Built during my final year at **NIT Rourkela**, this project explores how we can use AI to interact with complex physical environments.
 
-## 🚀 [Click Here for the Live Demo]
-
 ## 🛠️ How it Works
 
 ### 1. The Physics (General Relativity & Optics)
